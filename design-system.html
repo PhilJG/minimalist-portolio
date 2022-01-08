@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&family=Public+Sans:wght@100&display=swap" rel="stylesheet"> 
+    <title>Design System</title>
+  </head>
+  <body>
+    <header class="bg-dark" style="background-image: ./image-homepage-profile.jpg;">
+      <h1 class="ff-serif text-white">Design system</h1>
+    </header>
+    <div class="container">
+            
+            <section id="colors" style="margin: 4rem 0">
+              <div class="flex container">
+                  <h2 class="numbered-title ff-sans-serif" style="color: hsl(167 36% 54%)">Primary</h2>
+
+                    <div style="flex-grow: 1;">
+                      <div class="circle bg-accent"></div>
+                      <p class="ff-sans-serif">Slightly Desaturated Cyan</p>
+                        <p class="text-dark ff-sans-serif uppercase" style="opacity: .5;">#5FB4A2 <br>
+                        RGB : 95, 180, 162 <br> HSL : 167 36% 54%</p>
+                    </div>
+                          <div style="flex-grow: 1;">
+                            <p class="ff-sans-serif">Dark Blue</p>
+                      <div class="circle bg-dark"></div>
+                        <p class="text-dark ff-sans-serif uppercase" style="opacity: .5;">#203A4C <br>
+                        RGB : 32, 58, 76 <br> HSL : 205°, 41%, 21%</p>
+                    </div>
+                          <div style="flex-grow: 1;">
+                            <p class="ff-sans-serif">Greyish Dark Blue</p>
+                      <div class="circle" style="background-color: hsl(245 10% 22%)"></div>
+                        <p class="text-dark ff-sans-serif uppercase" style="opacity: .5;">#33323D <br>
+                        RGB : 51, 50, 61 <br> HSL : 245°, 10%, 22%</p>
+                    </div>
+                  
+                </div>
+                <div class="flex container flow" >          
+                  <h2 class="numbered-title ff-sans-serif" style="color: hsl(167 36% 54%)">Secondary</h2>          
+                        <div style="flex-grow: 1;">
+                           <p class="ff-sans-serif">Very Light Grey(BG)</p>
+                           <div class="circle" style ="background-color: hsl(0 0% 98%)"></div>
+                           <p class="text-dark ff-sans-serif uppercase" style="opacity: .5;">#FAFAFA <br>
+                            RGB : 250, 250, 250 <br> HSL : 0, 0%, 98%</p>
+                          </div>
+                          <div style="flex-grow: 1;">
+                            <p class="ff-sans-serif">Light Grey (Text Field)</p>
+                            <div class="circle bg-accent" style ="background-color: hsl(240, 2%, 92%)"></div>
+                            <p class="text-dark ff-sans-serif uppercase" style="opacity: .5;">#EAEAEB <br>
+                              RGB : 234, 234, 235 <br> HSL : 240, 2%, 92%</p>
+                            </div>
+                            <div style="flex-grow: 1;">
+                              <p class="ff-sans-serif">Bright Red (Errors)</p>
+                      <div class="circle bg-accent" style="background-color: hsl(0, 90%, 57%);"></div>
+                        <p class="text-dark ff-sans-serif uppercase" style="opacity: .5;">#F43030 <br>
+                        RGB : 244, 48, 48 <br> HSL : 0, 90%, 57%</p>
+                    </div></div>
+            </section>
+            
+            <section id="typography"  style="margin: 4rem 0">
+                <h1 class="numbered-title ff-serif">02 Typography</h1>
+                <div class="flex container">
+                    <h2 class="numbered-title ff-sans-serif uppercase" style="color: hsl(167 36% 54%)">Font Family</h2> 
+                    <h1 class="ff-serif">Ibarra Real Nova</h1>
+                    <h1 class="ff-sans-serif">Public Sans</h1>
+                </div>
+              <div class="flex container">
+                <div class="grid">
+                  <h2 class="numbered-title ff-sans-serif uppercase" style="color: hsl(167 36% 54%)">Headings</h2>
+                  <p>H1, Ibarra Real Nova Bold, 50px, 50px Line, -0,45 Character</p>
+                  <h1 class="ff-serif fs-700">Jived fox nymph grabs quick waltz</h1>
+                
+                </div>
+                
+                <div class="grid">
+                  <h2 class="numbered-title ff-sans-serif uppercase" style="color: hsl(167 36% 54%)">Body</h2>
+                  <p>Body 1, Public Sans Regular, 16px, 30px Line</p>
+                    <p>Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque.</p>
+                </div>
+                </div>
+                </section>
+
+                <section id="buttons" style="margin: 4rem 0">
+                  <h1 class="number-title ff-serif">03 Buttons</h1>
+                  <button class="btn__normal--primary bg-dark" style="width:200px">
+                    <span>
+                      <img src="./images/icons/down-arrows.svg" class="btn__icon" alt="">
+               
+                    </button>
+                      <button class="btn__normal bg-dark" style="width:200px; background-color: hsl(var(--clr-slightly-desaturated-cyan));">
+                    <span>
+                      <img src="./images/icons/down-arrows.svg" class="btn__icon"  alt="">
+               
+                    </button>
+                      <button class="btn__normal " style="width:200px; background-color:  #EAEAEB;">
+                    <span>
+                      <img src="./images/icons/down-arrows.svg" class="btn__icon" alt="">
+               
+                    </button>
+                </section>
+                   
+  </body>
+</html>

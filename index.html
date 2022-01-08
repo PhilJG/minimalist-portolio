@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css">
+    <title>Frontend Mentor | Minimalist Portfolio</title>
+  </head>
+  <body class="bg-white">
+    <nav class="flex uppercase nav__bar">
+      <div class="logo"><img src="./images/logo.svg" alt="" /></div>
+      <ul class="flex nav__list">
+        <li><a href="" class="nav__link">Home</a></li>
+        <li><a href="" class="nav__link">Portfolio</a></li>
+        <li><a href="" class="nav__link">Contact Me</a></li>
+      </ul>
+      <div class="burger"><img src="./images/icons/hamburger.svg" alt=""></div>
+    </nav>
+    <header class="container">
+        <div class="hero container ">
+          <div class="hero__txt bg-white">
+            <h1 class="ff-serif">
+              Hey, I’m Alex Spencer and I love building beautiful websites
+            </h1>
+            <button class="btn btn__normal--primary fs-200 uppercase flex">
+              <img
+                src="./images/icons/down-arrows.svg"
+                class="btn__icon"
+                alt=""
+              />
+              <h2 class="ff-sans-serif fs-300"> About Me </h2>
+            </button>
+          </div>
+        </div>
+      </header>
+      <section class="about container grid">
+        <div class="about__img">
+          <img
+            src="./images/homepage/desktop/image-homepage-profile.jpg"
+            alt=""
+            class="about__img--headshot"
+          />
+        </div>
+        <div class="about__content">
+          <hr>
+          <h1 class="about__txt ff-serif fs-600">About Me</h1>
+          <p class="about__txt">
+            I’m a junior front-end developer looking for a new role in an
+            exciting company. I focus on writing accessible HTML, using modern
+            CSS practices and writing clean JavaScript. When writing JavaScript
+            code, I mostly use React, but I can adapt to whatever tools are
+            required. I’m based in London, UK, but I’m happy working remotely
+            and have experience in remote teams. When I’m not coding, you’ll
+            find me outdoors. I love being out in nature whether that’s going
+            for a walk, run or cycling. I’d love you to check out my work.
+          </p>
+          <button class="btn btn__normal--secondary">Go to Portfolio</button>
+          <hr>
+        </div>
+      </section>
+      <section class="cta flex container">
+
+        <h1 class="ff-serif fs-700" >
+          Interested in doing a project together? 
+        </h1>
+        <hr>
+        <button class="btn btn__normal--secondary">
+          Contact Me
+
+        </button>
+      </section>
+
+      <footer class="bg-dark">
+        <nav class="nav__footer flex">
+          <ul class="nav__list flex">
+            <li>
+              <div class="logo__white footer"><img src="./images/logo-white.svg"  alt=""></div>
+            </li>
+            <li><a href="" class=" nav__link footer text-white">Home</a></li>
+            <li><a href="" class=" nav__link footer text-white">Portfolio</a></li>
+            <li><a href="" class=" nav__link footer text-white">Contact Me</a></li>
+          </ul>
+          <ul class="nav__list flex">
+            <li class=" social__link footer text-white"><ion-icon name="logo-github"></ion-icon></li>
+            <li class=" social__link footer text-white"><ion-icon name="logo-linkedin"></ion-icon></li>
+    
+          </ul>
+        </nav>
+      </footer>
+    </div>
+    <script src="./script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
