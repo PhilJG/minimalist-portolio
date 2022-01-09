@@ -1,40 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Contact Me</title>
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
 
-  Home
-  Portfolio
-  Contact Me
+    <title>Frontend Mentor | Contact Me</title>
+  </head>
+  <body class="bg-white">
+    <nav class="flex uppercase nav__bar">
+      <div class="logo"><img src="./images/logo.svg" alt="" /></div>
+      <ul class="flex nav__list">
+        <li><a href="./index.html" class="nav__link">Home</a></li>
+        <li><a href="./portfolio.html" class="nav__link">Portfolio</a></li>
+        <li><a href="./contact.html" class="nav__link">Contact Me</a></li>
+      </ul>
+      <div class="burger">
+        <img src="./images/icons/hamburger.svg" alt="" />
+      </div>
+    </nav>
+    <section class="contact grid container">
+      <h1 class="ff-serif fs-700">Get in Touch</h1>
+      <p>
+        I’d love to hear about what you’re working on and how I could help. I’m
+        currently looking for a new role and am open to a wide range of
+        opportunities. My preference would be to find a position in a company in
+        London. But I’m also happy to hear about opportunites that don’t fit
+        that description. I’m a hard-working and positive person who will always
+        approach each task with a sense of purpose and attention to detail.
+        Please do feel free to check out my online profiles below and get in
+        touch using the form.
+      </p>
+    </section>
 
-  Get in Touch
+    <section class="contact grid container">
+      <div class="col">
+        <h1 class="ff-serif fs-700">Contact</h1>
+      </div>
+      <div class="col">
+        <form action="">
+          <label for="">Name</label>
+          <br />
+          <input placeholder="Jane Appleseed" type="text" />
+          <br />
+          <label for="">Email</label>
+          <br />
+          <input placeholder="example@email.com" type="email" name="" id="" />
+          <br />
+          <label for="">Message</label>
+          <br />
+          <input placeholder="How can I help" type="text" />
+          <br />
+          <button class="btn__normal--primary">Send Message</button>
+        </form>
+      </div>
+    </section>
 
-  I’d love to hear about what you’re working on and how I could help. I’m currently 
-  looking for a new role and am open to a wide range of opportunities. My preference 
-  would be to find a position in a company in London. But I’m also happy to hear about 
-  opportunites that don’t fit that description. I’m a hard-working and positive person 
-  who will always approach each task with a sense of purpose and attention to detail. 
-  Please do feel free to check out my online profiles below and get in touch using the form.
-
-  Contact Me
-
-  Name
-  Jane Appleseed
-
-  Email Address
-  email@example.com
-
-  Message
-  How can I help?
-
-  Send Message
-
-</body>
+    <footer class="bg-dark">
+      <nav class="nav__footer flex">
+        <ul class="nav__list flex">
+          <li>
+            <div class="logo__white footer">
+              <img src="./images/logo-white.svg" alt="" />
+            </div>
+          </li>
+          <li>
+            <a href="./index.html" class="nav__link footer text-white">Home</a>
+          </li>
+          <li>
+            <a href="./portfolio.html" class="nav__link footer text-white"
+              >Portfolio</a
+            >
+          </li>
+          <li>
+            <a href="./contact.html" class="nav__link footer text-white"
+              >Contact Me</a
+            >
+          </li>
+        </ul>
+        <ul class="nav__list flex">
+          <li class="social__link footer text-white">
+            <ion-icon name="logo-github"></ion-icon>
+          </li>
+          <li class="social__link footer text-white">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+    <script src="./script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>

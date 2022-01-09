@@ -1,0 +1,17 @@
+/* ------------------- */
+/* Custom properties   */
+/* ------------------- */
+/*Colors */
+/* Primary */
+/* Secondary */
+/* typography */
+/* font-sizes */
+/* Font Families */
+/* ------------- 
+/* General Reset  */
+/*------------- */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }

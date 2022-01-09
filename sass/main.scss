@@ -1,39 +1,11 @@
-/* ------------------- */
-/* Custom properties   */
-/* ------------------- */
+$clr-slightly-desaturated-cyan: hsl(167, 36%, 54%S);
+$clr-dark-blue: hsl(205 41% 21%);
+$clr-grayish-dark-blue: hsl(245 10% 22%);
 
-/*Colors */
+$clr-light-grey: hsl(0 0% 98%);
+$clr-very-light-grey: hsl(240 2% 92%);
+$clr-bright-red: hsl(0 90% 57%);
 
-/* Primary */
-$clr-slightly-desaturated-cyan: 167 36% 54%;
-$clr-dark-blue: 205 41% 21%;
-$clr-grayish-dark-blue: 245 10% 22%;
-
-/* Secondary */
-$clr-light-grey: 0 0% 98%;
-$clr-very-light-grey: 240 2% 92%;
-$clr-bright-red: 0 90% 57%;
-
-/* typography */
-/* font-sizes */
-$fs-900: 9.375rem;
-$fs-800: 6.25rem;
-$fs-700: 3.5rem;
-$fs-600: 2rem;
-$fs-500: 1.75rem;
-$fs-400: 1.125rem;
-$fs-300: 1rem;
-$fs-200: 0.875rem;
-
-/* Font Families */
-$ff-serif: "Ibarra Real Nova", serif;
-$ff-sans-serif: "Public Sans", sans-serif;
-
-/* ------------- 
-/* General Reset  */
-/*------------- */
-
-/* Box sizing rules */
 *,
 *::before,
 *::after {

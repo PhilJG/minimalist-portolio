@@ -152,6 +152,7 @@ header {
 
 button {
   border-style: none;
+  cursor: pointer;
 }
 
 .sr-only {
@@ -244,6 +245,10 @@ button {
   line-height: 1.1;
 }
 
+section {
+  padding: 1rem 4rem ;
+}
+
 .circle {
   width: 56px;
   height: 56px;
@@ -319,16 +324,29 @@ padding-inline: 4rem;
 
 /* About */
 
-.about {
-  grid-template-columns: 1fr 1fr;
-  padding: 0 4rem;
+.about__col {
+    grid-template-columns: 1fr 1fr;
+
+}
+.headshot__img {
+  background-image: url(./images/homepage/desktop/image-homepage-profile@2x.jpg);
+  background-position: center; 
+  background-size: contain;
+    background-repeat: no-repeat;
+
 }
 
-.about__content {
+/* col */
+
+.col {
+  grid-template-columns: 1fr 1fr;
+}
+
+.col__content {
   padding: 0 5rem;
 }
 
-.about__txt {
+.col__txt {
   padding: 2rem 0;
 } 
 /* Call to Action */
@@ -362,14 +380,47 @@ ul.nav__list:nth-child(1) {
   stroke: hsl(var(--clr-very-light-grey));
 }
 
+/* Portfolio */
 
-@media (max-width:1100px) and (min-width: 801px) {
+.portfolio__img {
+ overflow: hidden;
+}
+
+.project__img {
+  flex-direction: column;
+}
+
+/*Project Toggle*/
+.project__toggle--link {
+  text-decoration: none;
+  align-items: center;
+}
+.project__toggle{
+  justify-content: space-between;
+}
+.project__toggle--arrow {
+  width: 20px;
+  height: 32px;
+}
+
+/* Form */
+
+input {
+  width: 100%;
+}
+
+.contact {
+  grid-template-columns: 1fr 1fr;
+}
+
+
+@media (max-width:900px) and (min-width: 751px) {
   .hero {
   height: auto;
 }
 
-.about {
-  grid-template-columns: 40% 1fr;
+.col {
+  grid-template-columns: 1fr 1fr;
   padding: 0 2rem;
 }
 
@@ -379,7 +430,7 @@ header {
   padding-top: 2rem;
 }
 
-.about__content {
+.col__content {
   padding: 0 2.5rem;
 }
 
@@ -387,13 +438,11 @@ nav {
   padding-inline: auto;
 }
 
-.nav__list {
-  display: block;
-}
 
-.about__img {
+
+.col__img {
  overflow: hidden;
- max-width: 330px;
+ max-width: 100%;
 text-indent: -140px;
 }
 
@@ -403,17 +452,22 @@ picture {
   display: block;
   
 }
+
+.about__col {
+  grid-template-columns: 1fr 1fr;
+}
+.headshot__img {
+  background-image: url(./images/homepage/tablet/image-homepage-profile@2x.jpg);
+  background-size: contain;
+}
 }
 
-@media (max-width:800px) {
+@media (max-width:750px) {
   .hero {
     height: auto;
   }
 
-  .about {
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr;
-}
+ 
 
 .container,
 header {
@@ -439,12 +493,20 @@ header {
   display: none;
 }
 
-.about__img {
+.col__img {
  float: end;
 }
 
 .nav__footer {
  flex-direction: column;
+}
 
+.contact {
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr;
+}
+
+.headshot__img {
+  background-image: url(./images/homepage/mobile/image-homepage-profile@2x.jpg);
 }
 }

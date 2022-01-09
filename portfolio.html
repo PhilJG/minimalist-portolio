@@ -1,54 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | My Projects</title>
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    
+    <title>Frontend Mentor | Minimalist Portfolio</title>
+  </head>
+  <body class="bg-white">
+    <nav class="flex uppercase nav__bar">
+      <div class="logo"><img src="./images/logo.svg" alt="" /></div>
+      <ul class="flex nav__list">
+        <li><a href="./index.html" class="nav__link">Home</a></li>
+        <li><a href="./portfolio.html" class="nav__link">Portfolio</a></li>
+        <li><a href="./contact.html" class="nav__link">Contact Me</a></li>
+      </ul>
+      <div class="burger">
+        <img src="./images/icons/hamburger.svg" alt="" />
+      </div>
+    </nav>
 
-  Home
-  Portfolio
-  Contact Me
+    <!--Manage-->
+    <section class="col container grid">
+      <div class="col__img">
+        <img
+          src="./images/portfolio/desktop/image-portfolio-manage@2x.jpg"
+          alt=""
+          class="col__img"
+        />
+      </div>
+      <div class="col">
+        <hr>
 
-  Manage
+          <h1 class="col__txt ff-serif fs-600">Manage</h1>
+          <p class="col__txt">
+            Manage This project required me to build a fully responsive landing
+            page to the designs provided. I used HTML5, along with CSS Grid and
+            JavaScript for the areas that required interactivity, such as the
+            testimonial slider. View Project Bookmark This project required me to
+            build a fully responsive landing page to the designs provided. I used
+            HTML5, along with CSS Grid and JavaScript for the areas that required
+            interactivity, such as the features section.
+          </p>
+          <button class="btn btn__normal--secondary" href="./manage.html">View Project</button>
+        </div>
+          <hr />
+      </div>
+    </section>
 
-  This project required me to build a fully responsive landing page to the designs provided. 
-  I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, 
-  such as the testimonial slider.
+    <!--Bookmark-->
+     <section class="col container grid">
+       <div class="col">
+         <hr>
+         <h1 class="col__txt ff-serif fs-600">Bookmark</h1>
+         <p class="col__txt">
+           Manage This project required me to build a fully responsive landing
+           page to the designs provided. I used HTML5, along with CSS Grid and
+           JavaScript for the areas that required interactivity, such as the
+           testimonial slider. View Project Bookmark This project required me to
+           build a fully responsive landing page to the designs provided. I used
+           HTML5, along with CSS Grid and JavaScript for the areas that required
+           interactivity, such as the features section.
+          </p>
+          <button class="btn btn__normal--secondary" href="bookmark.html">View Project</button>
+        </div>
+        <div class="col__img">
+          <img
+            src="./images/portfolio/desktop/image-portfolio-bookmark@2x.jpg"
+            alt=""
+            class="col__img"
+          />
+        </div>
+        <hr />
+      </div>
+    </section>
 
-  View Project
+    <!--Insure-->
+    <section class="col container grid">
+      <div class="col">
 
-  Bookmark
+        <div class="col__img">
+          <img
+          src="./images/portfolio/desktop/image-portfolio-insure@2x.jpg"
+          alt=""
+          class="col__img"
+          />
+        </div>
+      </div>
+      <div class="col">
+        <hr />
+        <h1 class="col__txt ff-serif fs-600">Insure</h1>
+        <p class="col__txt">
+          Insure This was a small project which mostly consisted of HTML and
+          CSS. I built a fully-responsive landing page. The only JavaScript this
+          project required was to enable the toggling of the mobile navigation.
+        </p>
+        <button class="btn btn__normal--secondary" href="insure.html">View Project</button>
+      </div>
+      <hr>
+    </section>
 
-  This project required me to build a fully responsive landing page to the designs provided. I 
-  used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such 
-  as the features section.
+    <!--Fylo-->
+     <section class="col container grid">
+       <div class="col">
+         <hr>
+         <h1 class="col__txt ff-serif fs-600">Fylo</h1>
+         <p class="col__txt">
+          Fylo This project was built in pure HTML and CSS. I had mobile and
+          desktop designs to work to and built it so that it was
+          fully-responsive. I took a mobile-first approach and used modern CSS
+          like Flexbox and Grid for layout purposes.
+          </p>
+          <button class="btn btn__normal--secondary" href="fylo.html">View Project</button>
+        </div>
+        <div class="col__img">
+          <img
+            src="./images/portfolio/desktop/image-portfolio-fylo@2x.jpg"
+            alt=""
+            class="col__img"
+          />
+        </div>
+        <hr />
+      </div>
+    </section>
 
-  View Project
+        
+    </section>
+      <section class="cta flex container">
+      <h1 class="ff-serif fs-700">Interested in doing a project together?</h1>
+      <hr />
+      <button href="./contact.html" class="btn btn__normal--secondary">Contact Me</button>
+    </section>
 
-  Insure
-
-  This was a small project which mostly consisted of HTML and CSS. I built a fully-responsive 
-  landing page. The only JavaScript this project required was to enable the toggling of the 
-  mobile navigation.
-
-  View Project
-
-  Fylo
-
-  This project was built in pure HTML and CSS. I had mobile and desktop designs to work to and 
-  built it so that it was fully-responsive. I took a mobile-first approach and used modern 
-  CSS like Flexbox and Grid for layout purposes.
-
-  View Project
-
-  Interested in doing a project together?
-
-  Contact Me
-
-</body>
+    <footer class="bg-dark">
+      <nav class="nav__footer flex">
+        <ul class="nav__list flex">
+          <li>
+            <div class="logo__white footer">
+              <img src="./images/logo-white.svg" alt="" />
+            </div>
+          </li>
+          <li><a href="./index.html" class="nav__link footer text-white">Home</a></li>
+          <li><a href="./portfolio.html" class="nav__link footer text-white">Portfolio</a></li>
+          <li><a href="./contact.html" class="nav__link footer text-white">Contact Me</a></li>
+        </ul>
+        <ul class="nav__list flex">
+          <li class="social__link footer text-white">
+            <ion-icon name="logo-github"></ion-icon>
+          </li>
+          <li class="social__link footer text-white">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+       <script src="./script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
