@@ -144,10 +144,10 @@ select {
 
 .container,
 header {
-  padding: 4em;
+padding: 0 4rem 4rem 4rem;
+padding-top: 0;
   margin-inline: auto;
   max-width: 80rem;
-  padding-top: 2rem;
 }
 
 button {
@@ -287,7 +287,7 @@ nav {
 padding-inline: 4rem;
 }
 .nav__bar {
-  padding: 2rem 4rem 0 4rem;
+  padding: 2rem 4rem;
 }
 .nav__list {
   list-style: none;
@@ -309,22 +309,27 @@ padding-inline: 4rem;
 
 .hero {
   background-image: url(./images/homepage/desktop/image-homepage-hero@2x.jpg);
-  position: fit;
-  background-position: center;
+  position: contain;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  height: 650px;
+grid-template-columns: 3fr repeat(5, 1fr);
+grid-template-rows: 1fr repeat(2, 2fr);
 }
 .hero__txt {
-  width: 40vw;
   padding: 1rem;
+  grid-area: 3 / 1 / 4 / 2;
 }
+
+.hero__img--mobile {
+  display: none;
+}
+
 
 
 /* About */
 
-.about__col {
+.grid__about {
     grid-template-columns: 1fr 1fr;
 
 }
@@ -333,6 +338,7 @@ padding-inline: 4rem;
   background-position: center; 
   background-size: contain;
     background-repeat: no-repeat;
+
 
 }
 
@@ -362,6 +368,20 @@ padding-inline: 4rem;
   color: hsl(var(--clr-very-light-grey));
 }
 
+.list {
+  list-style: none;
+}
+
+.footer__list {
+    flex-direction: row;
+    align-items: center;
+  }
+  
+
+  .social__link {
+    font-size: 32px;
+  }
+
 ul.nav__list:nth-child(1) {
  padding-left: 0px;
 }
@@ -382,9 +402,14 @@ ul.nav__list:nth-child(1) {
 
 /* Portfolio */
 
+.portfolio__grid {
+  grid-template-columns: 1fr 1fr;
+}
+
 .portfolio__img {
  overflow: hidden;
 }
+
 
 .project__img {
   flex-direction: column;
@@ -414,13 +439,21 @@ input {
 }
 
 
-@media (max-width:900px) and (min-width: 751px) {
+@media (max-width:900px) and (min-width: 576px) {
   .hero {
-  height: auto;
+    background-image: url(./images/homepage/tablet/image-homepage-hero@2x.jpg);
+position: contain;
+  background-repeat: no-repeat;
+  background-size: cover;
+grid-template-columns: 2fr 1fr;
+grid-template-rows: repeat(3, 1fr) 2fr;}
+
+.hero__txt {
+ grid-area: 4 / 1 / 5 / 2;
 }
 
 .col {
-  grid-template-columns: 1fr 1fr;
+ 
   padding: 0 2rem;
 }
 
@@ -443,7 +476,7 @@ nav {
 .col__img {
  overflow: hidden;
  max-width: 100%;
-text-indent: -140px;
+
 }
 
 img,
@@ -453,60 +486,83 @@ picture {
   
 }
 
-.about__col {
-  grid-template-columns: 1fr 1fr;
-}
 .headshot__img {
   background-image: url(./images/homepage/tablet/image-homepage-profile@2x.jpg);
   background-size: contain;
 }
 }
 
-@media (max-width:750px) {
+@media (max-width:660px) {
   .hero {
-    height: auto;
+    background-image: url(./images/homepage/mobile/image-homepage-hero@2x.jpg);
+    height: 540px;
+    grid-template-columns: 2fr;
+grid-template-rows: repeat(2, 1fr);
+background-size: contain;
   }
-
- 
-
-.container,
-header {
   
-   max-width: auto;
-   padding-top: 0
-}
-
-.cta {
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
-}
-
-.burger {
-  display: block;
-}
-
-.nav__list {
-  list-style: none;
-  flex-direction: column;
-  align-items: center;
+  .hero__img--mobile {
   display: none;
 }
+  
+  .container,
+  header {
+    
+    max-width: auto;
+    padding-top: 0
+  }
+  
+  .cta {
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .burger {
+    display: block;
+  }
+  
+  .nav__list {
+    list-style: none;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+  }
+  
+  .col__img {
+    float: end;
+  }
+  
+  .nav__footer {
+    flex-direction: column;
+  }
+  
+  .contact {
+    
+    grid-template-columns: 1fr 1fr;
+  }
+  .grid__about {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  
+  .headshot__img {
+    background-image: url(./images/homepage/mobile/image-homepage-profile@2x.jpg);
+   background-size: cover;
+    max-width: 450px;
+  }
 
-.col__img {
- float: end;
-}
+  .list {
+    list-style: none;
+    align-items: center;
+    padding-left: 0px;
+  }
+  .footer__list {
+    flex-direction: column;
+  }        
 
-.nav__footer {
- flex-direction: column;
-}
-
-.contact {
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr;
-}
-
-.headshot__img {
-  background-image: url(./images/homepage/mobile/image-homepage-profile@2x.jpg);
-}
+  .social__list {
+    flex-direction: row;
+  }
+  
 }

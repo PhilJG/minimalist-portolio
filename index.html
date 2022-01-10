@@ -2,8 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
     <link
       rel="icon"
       type="image/png"
@@ -21,12 +23,24 @@
         <li><a href="./portfolio.html" class="nav__link">Portfolio</a></li>
         <li><a href="./contact.html" class="nav__link">Contact Me</a></li>
       </ul>
+      <!-- <button href="#" class="toggle-button" id="toggle" aria-label="menu dropdown toggler">    
+              <img src="./images/icons/hamburger.svg" alt="" />
+</ion-icon>
+    </button>
+    <button href="#" class="toggle-button " id="toggle-off" aria-label="menu dropdown toggle off">    
+      <img src="./images/icons/close.svg" alt=""></ion-icon>    
+    </button> -->
       <div class="burger">
         <img src="./images/icons/hamburger.svg" alt="" />
       </div>
     </nav>
     <header class="container">
-      <div class="hero container">
+      <div class="hero grid">
+        <img
+          src="./images/homepage/mobile/image-homepage-hero@2x.jpg"
+          alt=""
+          class="hero__img--mobile"
+        />
         <div class="hero__txt bg-white">
           <h1 class="ff-serif">
             Hey, I’m Alex Spencer and I love building beautiful websites
@@ -42,15 +56,15 @@
         </div>
       </div>
     </header>
-    <section class="container grid">
-      <div class="col col__about col__img headshot__img">
+    <section class="grid__about container grid">
+      <div class="col col__img headshot__img">
         <!-- <img
           src="./images/homepage/desktop/image-homepage-profile.jpg"
           alt=""
           class="col__img--headshot"
         /> -->
       </div>
-      <div class="col col__about">
+      <div class="col">
         <hr />
         <h1 class="col__txt ff-serif fs-600">About Me</h1>
         <p class="col__txt">
@@ -75,7 +89,7 @@
 
     <footer class="bg-dark">
       <nav class="nav__footer flex">
-        <ul class="nav__list flex">
+        <ul class="list footer__list uppercase flex">
           <li>
             <div class="logo__white footer">
               <img src="./images/logo-white.svg" alt="" />
@@ -95,7 +109,7 @@
             >
           </li>
         </ul>
-        <ul class="nav__list flex">
+        <ul class="list social__list flex">
           <li class="social__link footer text-white">
             <ion-icon name="logo-github"></ion-icon>
           </li>
