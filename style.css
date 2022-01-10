@@ -123,6 +123,10 @@ select {
   }
 }
 
+input{
+
+  background-color: var(--clr-very-light-grey);
+}
 /* ------------------- */
 /* Utility classes     */
 /* ------------------- */
@@ -258,7 +262,6 @@ section {
 hr {
   color: hsl(var(--clr-light-grey));
 }
-
 
 .btn {
   width: 200px;
