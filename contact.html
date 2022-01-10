@@ -27,18 +27,29 @@
       </div>
     </nav>
     <section class="contact grid container">
-      <h1 class="ff-serif fs-700">Get in Touch</h1>
-      <p>
-        I’d love to hear about what you’re working on and how I could help. I’m
-        currently looking for a new role and am open to a wide range of
-        opportunities. My preference would be to find a position in a company in
-        London. But I’m also happy to hear about opportunites that don’t fit
-        that description. I’m a hard-working and positive person who will always
-        approach each task with a sense of purpose and attention to detail.
-        Please do feel free to check out my online profiles below and get in
-        touch using the form.
-      </p>
-    </section>
+      <h1 class="contact__h ff-serif fs-700">Get in Touch</h1>
+      <div class="contact__content">
+        <p>
+          I’d love to hear about what you’re working on and how I could help. I’m
+          currently looking for a new role and am open to a wide range of
+          opportunities. My preference would be to find a position in a company in
+          London. But I’m also happy to hear about opportunites that don’t fit
+          that description. I’m a hard-working and positive person who will always
+          approach each task with a sense of purpose and attention to detail.
+          Please do feel free to check out my online profiles below and get in
+          touch using the form.
+        </p>
+        <ul class="nav__list flex">
+          <li class="social__link  text-black">
+            <ion-icon name="logo-github"></ion-icon>
+          </li>
+          <li class="social__link  text-black">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </li>
+        </ul>
+        
+              </div>
+      </section>
 
     <section class="contact grid container">
       <div class="col">
@@ -48,15 +59,15 @@
         <form action="">
           <label for="">Name</label>
           <br />
-          <input placeholder="Jane Appleseed" type="text" />
+          <input class="contact__input" placeholder="Jane Appleseed" type="text" />
           <br />
           <label for="">Email</label>
           <br />
-          <input placeholder="example@email.com" type="email" name="" id="" />
+          <input class="contact__input" placeholder="example@email.com" type="email" name="" id="" />
           <br />
           <label for="">Message</label>
           <br />
-          <textarea placeholder="How can I help" type="text" /></textarea>
+          <textarea class="contact__input" placeholder="How can I help" type="text" /></textarea>
           <br />
           <button class="btn__normal--primary">Send Message</button>
         </form>
