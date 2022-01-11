@@ -1,34 +1,24 @@
 "use strict";
 
-const navList = document.getElementsByClassName("nav__list");
-const toggle = document.getElementsByClassName("burger");
-const toggleOff = document.getElementById("toggle-off");
+const navList = document.querySelector(".nav__list");
+const navIcon = document.querySelector(".nav__icon");
+const closeIcon = document.querySelector(".close__icon");
 
-function classToggle() {
-  const navs = document.querySelectorAll(".nav__list");
+const toggleOn = function () {
+  if ((navList.style.diplay = "none")) {
+    navList.style.display = "flex";
+    navIcon.style.display = "none";
+    closeIcon.style.display = "block";
+  }
+};
 
-  navs.forEach((nav) => nav.classList.toggle("block"));
-}
+const toggleOff = function () {
+  if ((navList.style.diplay = "flex")) {
+    navList.style.display = "none";
+    navIcon.style.display = "block";
+    closeIcon.style.display = "none";
+  }
+};
 
-document.toggle.addEventListener("click", classToggle);
-
-// toggle.addEventListener("click", navVisible());
-// toggleOff.addEventListener("click", navInvisible());
-
-// function navVisible() {
-//   if (navList.classList == "hidden") {
-//     navList.style.display = "block";
-//     toggle.style.display = "none";
-//     toggleOff.style.display = "block";
-//   }
-//   console.log("block");
-// }
-
-// function navInblock() {
-//   if (navList.classList.display == "block") {
-//     navList.style.display = "none";
-//     toggle.style.display = "block";
-//     toggleOff.style.display = "none";
-//   }
-//   console.log("invisible");
-// }
+navIcon.addEventListener("click", toggleOn);
+closeIcon.addEventListener("click", toggleOff);
