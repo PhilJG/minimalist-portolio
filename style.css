@@ -570,6 +570,11 @@ padding: .5rem;
   .nav__footer {
     flex-direction: column;
   }
+
+  .portfolio__grid {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 100% 1fr;
+  }
   
   .contact {
     grid-template-rows: 100% 100%;
