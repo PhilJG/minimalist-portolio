@@ -260,6 +260,10 @@ hr {
   color: hsl(var(--clr-light-grey));
 }
 
+a {
+  text-decoration: none;
+}
+
 a:hover, a:focus {
   color: hsl(var(--clr-slightly-desaturated-cyan));
 }
