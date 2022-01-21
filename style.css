@@ -138,6 +138,9 @@ select {
   gap: var(--gap, 1rem);
 }
 
+.column {
+  flex-direction: column;
+}
 .flow > *:where(:not(:first-child)) {
   margin-top: var(--flow-space, 1rem);
   outline: 1px solid red;
@@ -145,7 +148,7 @@ select {
 
 .container,
 header {
-padding: 0 4rem 4rem 4rem;
+padding: 0 7rem 7rem 7rem;
 padding-top: 0;
   margin-inline: auto;
   max-width: 80rem;
@@ -184,7 +187,7 @@ button {
   color: hsl(var(--clr-dark));
 }
 .text-accent {
-  color: hsl(var(--clr-grey));
+  color: hsl(var(--clr-slightly-desaturated-cyan));
 }
 .text-white {
   color: hsl(var(--clr-very-light-grey));
@@ -305,7 +308,7 @@ nav {
 padding-inline: 4rem;
 }
 .nav__bar {
-  padding: 2rem 4rem;
+  padding: 2rem 7rem;
 }
 .nav__list {
   list-style: none;
@@ -326,13 +329,17 @@ padding-inline: 4rem;
 /* Hero */
 
 .hero {
-  background-image: url(./images/homepage/desktop/image-homepage-hero@2x.jpg);
   position: contain;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-grid-template-columns: 3fr repeat(5, 1fr);
-grid-template-rows: 1fr repeat(2, 2fr);
+}
+
+.home__hero {
+  background-image: url(./images/homepage/desktop/image-homepage-hero@2x.jpg);
+  grid-template-columns: 3fr repeat(5, 1fr);
+  grid-template-rows: 1fr repeat(2, 2fr);
+  
 }
 .hero__txt {
   padding: 1rem;
@@ -343,7 +350,58 @@ grid-template-rows: 1fr repeat(2, 2fr);
   display: none;
 }
 
+.project__hero {
+   position: contain;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 60vh;
+}
 
+
+.project__grid {
+  grid-column-gap: 5rem;
+display: grid;
+margin: auto;
+grid-template-areas: "left-1 right-1" "left-2 right-2";
+}
+
+.project__title {
+  grid-area: left-1;
+display: flex;
+align-items: flex-start;
+padding-top: 2rem;
+}
+
+.project__description {
+ grid-area: left-1;
+ display: flex;
+ align-items: flex-end;
+}
+
+
+.project__preview {
+ grid-area: right-2;
+}
+
+.project__summary {
+    grid-area: right-1;
+
+}
+
+.project__img {
+  height: 400px;
+  position: cover;
+  background-size: cover;
+  position: relative;
+  height: 40vh;
+  width: 100%;
+}
+
+.project__hero--insure {
+  background-image: url(/minimalist/images/detail/desktop/image-insure-hero@2x.jpg)
+
+}
 
 /* About */
 
@@ -362,9 +420,9 @@ grid-template-rows: 1fr repeat(2, 2fr);
 
 /* col */
 
-.col {
+/* .col {
   grid-template-columns: 1fr 1fr;
-}
+} */
 
 .col__txt {
   padding: 2rem 0;
@@ -374,6 +432,7 @@ grid-template-rows: 1fr repeat(2, 2fr);
 .cta {
   justify-content: space-between;
   align-items: center;
+  padding-top: 7rem;
 }
 
 /* Footer */
@@ -414,29 +473,84 @@ ul.nav__list:nth-child(1) {
   stroke: hsl(var(--clr-very-light-grey));
 }
 
-/* Portfolio */
+/* Portfolio-Desktop */
 
 .portfolio__grid {
-  grid-template-columns: 1fr 1fr;
-  gap: 125px;
+  grid-template-areas: 
+  "img-1 txt-1" 
+  "txt-2 img-2" 
+  "img-3 txt-3" 
+  "txt-4 img-4";
+  column-gap: 7rem;
+  display: grid;
 }
 
 .portfolio__img {
  overflow: hidden;
+background-size: contain;
+ background-repeat: no-repeat;
+
+}
+
+.portfolio__img--manage {
+ grid-area: img-1;
+ background-image: url(/minimalist/images/portfolio/desktop/image-portfolio-manage.jpg);
+}
+
+.portfolio__content--manage {
+ grid-area: txt-1;
+}
+
+.portfolio__content--bookmark {
+ grid-area: txt-2;
+}
+
+.portfolio__img--bookmark {
+ grid-area: img-2;
+  background-image: url(/minimalist/images/portfolio/desktop/image-portfolio-bookmark.jpg);
+}
+
+.portfolio__img--insure {
+ grid-area: img-3;
+ background-image: url(/minimalist/images/portfolio/desktop/image-portfolio-insure.jpg);
+}
+.portfolio__content--insure {
+ grid-area: txt-3;
+}
+.portfolio__content--fylo {
+ grid-area: txt-4;
+}
+.portfolio__img--fylo {
+ grid-area: img-4;
+  background-image: url(/minimalist/images/portfolio/desktop/image-portfolio-fylo.jpg);
 }
 
 
-.project__img {
-  flex-direction: column;
+/* Project Page */
+
+.project__img--insure-1 {
+  background-image: url(/minimalist/images/detail/desktop/image-insure-preview-1@2x.jpg)
+  
+}
+
+.project__img--insure-2 {
+  background-image: url(/minimalist/images/detail/desktop/image-insure-preview-2@2x.jpg);
 }
 
 /*Project Toggle*/
+
+.project__toggle--main {
+    border-top: grey 1px solid;
+border-bottom: grey 1px solid;
+padding: 3rem;
+}
+
+.project__toggle{
+  justify-content: space-between;
+}
 .project__toggle--link {
   text-decoration: none;
   align-items: center;
-}
-.project__toggle{
-  justify-content: space-between;
 }
 .project__toggle--arrow {
   width: 20px;
@@ -466,7 +580,6 @@ margin: 1rem 0 2rem 0;
 
 @media (max-width:900px) and (min-width: 576px) {
   .hero {
-    background-image: url(./images/homepage/tablet/image-homepage-hero@2x.jpg);
 position: contain;
   background-repeat: no-repeat;
   background-size: cover;
@@ -476,16 +589,15 @@ grid-template-rows: repeat(3, 1fr) 2fr;}
 .hero__txt {
  grid-area: 4 / 1 / 5 / 2;
 }
-
+/* 
 .col {
  
   padding: 0 2rem;
-}
+} */
 
 .container,
 header {
-  
-  padding-top: 2rem;
+  padding: 2rem 4rem 4rem 4rem;
 }
 
 nav {
@@ -493,13 +605,48 @@ nav {
 }
 
 
-.col__img {
- overflow: hidden;
- max-width: 100%;
+.nav__bar {
+  padding: 2rem 4rem;
 }
+
+/* Portolio-Tablet */
 
 .portfolio__grid {
   gap: 69px;
+}
+
+.portfolio__img--manage {
+ grid-area: img-1;
+ background-image: url(/minimalist/images/portfolio/tablet/image-portfolio-manage.jpg);
+}
+
+.portfolio__content--manage {
+ grid-area: txt-1;
+}
+
+.portfolio__content--bookmark {
+ grid-area: txt-2;
+}
+
+.portfolio__img--bookmark {
+ grid-area: img-2;
+  background-image: url(/minimalist/images/portfolio/tablet/image-portfolio-bookmark.jpg);
+}
+
+.portfolio__img--insure {
+ grid-area: img-3;
+ background-image: url(/minimalist/images/portfolio/tablet/image-portfolio-insure.jpg);
+}
+.portfolio__content--insure {
+ grid-area: txt-3;
+}
+.portfolio__content--fylo {
+ grid-area: txt-4;
+}
+.portfolio__img--fylo {
+ grid-area: img-4;
+  background-image: url(/minimalist/images/portfolio/tablet/image-portfolio-fylo.jpg);
+
 }
 
 img,
@@ -513,11 +660,73 @@ picture {
   background-image: url(./images/homepage/tablet/image-homepage-profile@2x.jpg);
   background-size: contain;
 }
+
+.project__grid {
+  grid-template-columns: 1fr 1fr;
+grid-template-areas: "left-1 right-1" "s s" "p p";
+column-gap: 5rem;
+}
+
+.project__title {
+  grid-area: left-1;
+display: flex;
+align-items: flex-start;
+padding-top: 0; 
+}
+
+.project__description {
+ grid-area: right-1;
+ padding-top: 0;
+ align-self: baseline;
+}
+
+.project__summary {
+    grid-area: s;
+
+}
+
+.project__preview {
+ grid-area: p;
+}
+
+.project__type {
+ flex-direction: column;
+grid-area: left-1;
+ display: flex;
+ align-content: flex-end;
+ column-gap: 5rem;
+ padding-top: 5rem;
+}
+
+.project__img {
+  
+  height: 90vh;
+
+}
+
+.project__hero--insure {
+  background-image: url(/minimalist/images/detail/tablet/image-insure-hero@2x.jpg)
+
+}
+
+.project__img--insure-1 {
+  background-image: url(/minimalist/images/detail/tablet/image-insure-preview-1@2x.jpg)
+  
+}
+
+.project__img--insure-2 {
+  background-image: url(/minimalist/images/detail/tablet/image-insure-preview-2@2x.jpg);
+}
+
 }
 
 @media (max-width:660px) {
+  .nav__bar {
+  padding: 2rem 4rem;
+}
+
+  
   .hero {
-    background-image: url(./images/homepage/mobile/image-homepage-hero@2x.jpg);
     height: 540px;
     grid-template-columns: 2fr;
 grid-template-rows: repeat(2, 1fr);
@@ -528,12 +737,17 @@ background-size: contain;
   display: none;
 }
   
-  .container,
-  header {
-    
-    max-width: auto;
-    padding-top: 0
-  }
+.container,
+header {
+/*! padding: 0 7rem 7rem 7rem; */
+padding: 8rem 0;
+  margin-inline: auto;
+  width: 90%;
+}
+
+  section {
+  padding: 1.5rem 2rem;
+}
   
   .cta {
     justify-content: space-between;
@@ -560,7 +774,7 @@ background-size: contain;
     position: absolute;
     z-index: 999;
     top: 60px;
-    left: 150px;
+    right: 60px;
   }
 
   .nav__link--item {
@@ -573,11 +787,6 @@ padding: .5rem;
   
   .nav__footer {
     flex-direction: column;
-  }
-
-  .portfolio__grid {
-    grid-template-columns: 1fr;
-    grid-auto-rows: 100% 1fr;
   }
   
   .contact {
@@ -607,5 +816,99 @@ padding: .5rem;
   .social__list {
     flex-direction: row;
   }
+
+  /* Portfolio-Mobile */
+  .portfolio__grid {
+  gap: 69px;
+    grid-template-areas:
+    "img-1"
+    "txt-1" 
+    "img-2"
+    "txt-2" 
+    "img-3"
+    "txt-3" 
+    "img-4"
+    "txt-4";
+}
+
+.portfolio__img--manage {
+ grid-area: img-1;
+ background-image: url(/minimalist/images/portfolio/mobile/image-portfolio-manage.jpg);
+}
+.portfolio__img--bookmark {
+ grid-area: img-2;
+  background-image: url(/minimalist/images/portfolio/mobile/image-portfolio-bookmark.jpg);
+}
+.portfolio__img--insure {
+ grid-area: img-3;
+ background-image: url(/minimalist/images/portfolio/mobile/image-portfolio-insure.jpg);
+}
+
+.portfolio__img--fylo {
+ grid-area: img-4;
+  background-image: url(/minimalist/images/portfolio/mobile/image-portfolio-fylo.jpg);
+
+}
+.portfolio__content--manage {
+ grid-area: txt-1;
+}
+
+.portfolio__content--bookmark {
+ grid-area: txt-2;
+}
+
+
+.portfolio__content--insure {
+ grid-area: txt-3;
+}
+.portfolio__content--fylo {
+ grid-area: txt-4;
+}
+
+  /* Project Page */
+  .project__grid {
+    grid-template-columns: 1fr;
+ grid-template-areas: "a" "b" "c" "d" "e" "f";
+  }
+
+  .project__title {
+grid-area: a;  }
+
+  .project__description {
+grid-area: b;  }
+
+  .project__type {
+ flex-direction: column;
+grid-area: c;
+ display: flex;
+
+}
+
+  .project__summary {
+grid-area: e;  }
+
+  .project__preview {
+grid-area: f;  }
+
+  .project__hero--insure {
+  background-image: url(/minimalist/images/detail/mobile/image-insure-hero@2x.jpg)
+
+}
+
+.project__img--insure-1 {
+  background-image: url(/minimalist/images/detail/mobile/image-insure-preview-1@2x.jpg)
   
+}
+
+.project__img--insure-2 {
+  background-image: url(/minimalist/images/detail/mobile/image-insure-preview-2@2x.jpg);
+}
+
+.cta {
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem 4rem 1rem 4rem;
+    text-align: center;
+  }
 }
