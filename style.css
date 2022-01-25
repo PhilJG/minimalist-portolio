@@ -401,16 +401,16 @@ padding-top: 2rem;
 }
 
 .project__hero--manage {
-  background-image: url(/minimalist/images/detail/desktop/image-manage-hero@2x.jpg)
+  background-image: url(images/detail/desktop/image-manage-hero@2x.jpg)
 }
 .project__hero--bookmark {
-  background-image: url(/minimalist/images/detail/desktop/image-bookmark-hero@2x.jpg)
+  background-image: url(images/detail/desktop/image-bookmark-hero@2x.jpg)
 }
 .project__hero--insure {
-  background-image: url(/minimalist/images/detail/desktop/image-insure-hero@2x.jpg)
+  background-image: url(images/detail/desktop/image-insure-hero@2x.jpg)
 }
 .project__hero--fylo {
-  background-image: url(/minimalist/images/detail/desktop/image-fylo-hero@2x.jpg)
+  background-image: url(images/detail/desktop/image-fylo-hero@2x.jpg)
 }
 /* About */
 
@@ -495,30 +495,29 @@ ul.nav__list:nth-child(1) {
 }
 
 .portfolio__img {
- overflow: hidden;
-background-size: contain;
+background-size: cover;
  background-repeat: no-repeat;
 
 }
 
 .portfolio__img--manage {
  grid-area: img-1;
- background-image: url(/minimalist/images/portfolio/desktop/image-portfolio-manage.jpg);
+ background-image: url(images/portfolio/desktop/image-portfolio-manage.jpg);
 }
 
 .portfolio__img--bookmark {
  grid-area: img-2;
-  background-image: url(/minimalist/images/portfolio/desktop/image-portfolio-bookmark.jpg);
+  background-image: url(images/portfolio/desktop/image-portfolio-bookmark.jpg);
 }
 
 .portfolio__img--insure {
  grid-area: img-3;
- background-image: url(/minimalist/images/portfolio/desktop/image-portfolio-insure.jpg);
+ background-image: url(images/portfolio/desktop/image-portfolio-insure.jpg);
 }
 
 .portfolio__img--fylo {
  grid-area: img-4;
-  background-image: url(/minimalist/images/portfolio/desktop/image-portfolio-fylo.jpg);
+  background-image: url(images/portfolio/desktop/image-portfolio-fylo.jpg);
 }
 
 .portfolio__content--manage {
@@ -540,38 +539,38 @@ background-size: contain;
 /* Project Page */
 
 .project__img--manage-1 {
-  background-image: url(/minimalist/images/detail/desktop/image-manage-preview-1@2x.jpg)
+  background-image: url(images/detail/desktop/image-manage-preview-1@2x.jpg)
 }
 
 .project__img--manage-2 {
-  background-image: url(/minimalist/images/detail/desktop/image-manage-preview-2@2x.jpg);
+  background-image: url(images/detail/desktop/image-manage-preview-2@2x.jpg);
 }
 
 
 .project__img--bookmark-1 {
-  background-image: url(/minimalist/images/detail/desktop/image-bookmark-preview-1@2x.jpg)
+  background-image: url(images/detail/desktop/image-bookmark-preview-1@2x.jpg)
 }
 
 .project__img--bookmark-2 {
-  background-image: url(/minimalist/images/detail/desktop/image-bookmark-preview-2@2x.jpg);
+  background-image: url(images/detail/desktop/image-bookmark-preview-2@2x.jpg);
 }
 
 
 .project__img--insure-1 {
-  background-image: url(/minimalist/images/detail/desktop/image-insure-preview-1@2x.jpg)
+  background-image: url(images/detail/desktop/image-insure-preview-1@2x.jpg)
 }
 
 .project__img--insure-2 {
-  background-image: url(/minimalist/images/detail/desktop/image-insure-preview-2@2x.jpg);
+  background-image: url(images/detail/desktop/image-insure-preview-2@2x.jpg);
 }
 
 
 .project__img--fylo-1 {
-  background-image: url(/minimalist/images/detail/desktop/image-fylo-preview-1@2x.jpg)
+  background-image: url(images/detail/desktop/image-fylo-preview-1@2x.jpg)
 }
 
 .project__img--fylo-2 {
-  background-image: url(/minimalist/images/detail/desktop/image-fylo-preview-2@2x.jpg);
+  background-image: url(images/detail/desktop/image-fylo-preview-2@2x.jpg);
 }
 /*Project Toggle*/
 
@@ -659,9 +658,12 @@ nav {
   gap: 69px;
 }
 
+.portfolio__img {
+}
+
 .portfolio__img--manage {
  grid-area: img-1;
- background-image: url(/minimalist/images/portfolio/tablet/image-portfolio-manage.jpg);
+ background-image: url(./images/portfolio/tablet/image-portfolio-manage.jpg);
 }
 
 .portfolio__content--manage {
@@ -674,12 +676,12 @@ nav {
 
 .portfolio__img--bookmark {
  grid-area: img-2;
-  background-image: url(/minimalist/images/portfolio/tablet/image-portfolio-bookmark.jpg);
+  background-image: url(images/portfolio/tablet/image-portfolio-bookmark.jpg);
 }
 
 .portfolio__img--insure {
  grid-area: img-3;
- background-image: url(/minimalist/images/portfolio/tablet/image-portfolio-insure.jpg);
+ background-image: url(images/portfolio/tablet/image-portfolio-insure.jpg);
 }
 .portfolio__content--insure {
  grid-area: txt-3;
@@ -689,7 +691,7 @@ nav {
 }
 .portfolio__img--fylo {
  grid-area: img-4;
-  background-image: url(/minimalist/images/portfolio/tablet/image-portfolio-fylo.jpg);
+  background-image: url(images/portfolio/tablet/image-portfolio-fylo.jpg);
 
 }
 
@@ -754,54 +756,54 @@ grid-area: left-1;
 }
 
 .project__img--manage-1 {
-  background-image: url(/minimalist/images/detail/tablet/image-manage-preview-1@2x.jpg)
+  background-image: url(images/detail/tablet/image-manage-preview-1@2x.jpg)
   
 }
 
 .project__img--manage-2 {
-  background-image: url(/minimalist/images/detail/tablet/image-manage-preview-2@2x.jpg);
+  background-image: url(images/detail/tablet/image-manage-preview-2@2x.jpg);
 }
 
 .project__hero--bookmark {
-  background-image: url(/minimalist/images/detail/tablet/image-bookmark-hero@2x.jpg)
+  background-image: url(images/detail/tablet/image-bookmark-hero@2x.jpg)
 
 }
 
 .project__img--bookmark-1 {
-  background-image: url(/minimalist/images/detail/tablet/image-bookmark-preview-1@2x.jpg)
+  background-image: url(images/detail/tablet/image-bookmark-preview-1@2x.jpg)
   
 }
 
 .project__img--bookmark-2 {
-  background-image: url(/minimalist/images/detail/tablet/image-bookmark-preview-2@2x.jpg);
+  background-image: url(images/detail/tablet/image-bookmark-preview-2@2x.jpg);
 }
 
 .project__hero--insure {
-  background-image: url(/minimalist/images/detail/tablet/image-insure-hero@2x.jpg)
+  background-image: url(images/detail/tablet/image-insure-hero@2x.jpg)
 
 }
 
 .project__img--insure-1 {
-  background-image: url(/minimalist/images/detail/tablet/image-insure-preview-1@2x.jpg)
+  background-image: url(images/detail/tablet/image-insure-preview-1@2x.jpg)
   
 }
 
 .project__img--insure-2 {
-  background-image: url(/minimalist/images/detail/tablet/image-insure-preview-2@2x.jpg);
+  background-image: url(images/detail/tablet/image-insure-preview-2@2x.jpg);
 }
 
 .project__hero--fylo {
-  background-image: url(/minimalist/images/detail/tablet/image-fylo-hero@2x.jpg)
+  background-image: url(images/detail/tablet/image-fylo-hero@2x.jpg)
 
 }
 
 .project__img--fylo-1 {
-  background-image: url(/minimalist/images/detail/tablet/image-fylo-preview-1@2x.jpg)
+  background-image: url(images/detail/tablet/image-fylo-preview-1@2x.jpg)
   
 }
 
 .project__img--fylo-2 {
-  background-image: url(/minimalist/images/detail/tablet/image-fylo-preview-2@2x.jpg);
+  background-image: url(images/detail/tablet/image-fylo-preview-2@2x.jpg);
 }
 
 }
@@ -919,20 +921,20 @@ padding: .5rem;
 
 .portfolio__img--manage {
  grid-area: img-1;
- background-image: url(/minimalist/images/portfolio/mobile/image-portfolio-manage.jpg);
+ background-image: url(images/portfolio/mobile/image-portfolio-manage.jpg);
 }
 .portfolio__img--bookmark {
  grid-area: img-2;
-  background-image: url(/minimalist/images/portfolio/mobile/image-portfolio-bookmark.jpg);
+  background-image: url(images/portfolio/mobile/image-portfolio-bookmark.jpg);
 }
 .portfolio__img--insure {
  grid-area: img-3;
- background-image: url(/minimalist/images/portfolio/mobile/image-portfolio-insure.jpg);
+ background-image: url(images/portfolio/mobile/image-portfolio-insure.jpg);
 }
 
 .portfolio__img--fylo {
  grid-area: img-4;
-  background-image: url(/minimalist/images/portfolio/mobile/image-portfolio-fylo.jpg);
+  background-image: url(images/portfolio/mobile/image-portfolio-fylo.jpg);
 
 }
 .portfolio__content--manage {
@@ -978,59 +980,59 @@ grid-area: f;
 }
 
   .project__hero--manage {
-  background-image: url(/minimalist/images/detail/mobile/image-manage-hero@2x.jpg)
+  background-image: url(images/detail/mobile/image-manage-hero@2x.jpg)
 
 }
 
 .project__img--manage-1 {
-  background-image: url(/minimalist/images/detail/mobile/image-manage-preview-1@2x.jpg)
+  background-image: url(images/detail/mobile/image-manage-preview-1@2x.jpg)
   
 }
 
 .project__img--manage-2 {
-  background-image: url(/minimalist/images/detail/mobile/image-manage-preview-2@2x.jpg);
+  background-image: url(images/detail/mobile/image-manage-preview-2@2x.jpg);
 }
 
   .project__hero--bookmark {
-  background-image: url(/minimalist/images/detail/mobile/image-bookmark-hero@2x.jpg)
+  background-image: url(images/detail/mobile/image-bookmark-hero@2x.jpg)
 
 }
 
 .project__img--bookmark-1 {
-  background-image: url(/minimalist/images/detail/mobile/image-bookmark-preview-1@2x.jpg)
+  background-image: url(images/detail/mobile/image-bookmark-preview-1@2x.jpg)
   
 }
 
 .project__img--bookmark-2 {
-  background-image: url(/minimalist/images/detail/mobile/image-bookmark-preview-2@2x.jpg);
+  background-image: url(images/detail/mobile/image-bookmark-preview-2@2x.jpg);
 }
 
   .project__hero--insure {
-  background-image: url(/minimalist/images/detail/mobile/image-insure-hero@2x.jpg)
+  background-image: url(images/detail/mobile/image-insure-hero@2x.jpg)
 
 }
 
 .project__img--insure-1 {
-  background-image: url(/minimalist/images/detail/mobile/image-insure-preview-1@2x.jpg)
+  background-image: url(images/detail/mobile/image-insure-preview-1@2x.jpg)
   
 }
 
 .project__img--insure-2 {
-  background-image: url(/minimalist/images/detail/mobile/image-insure-preview-2@2x.jpg);
+  background-image: url(images/detail/mobile/image-insure-preview-2@2x.jpg);
 }
 
   .project__hero--fylo {
-  background-image: url(/minimalist/images/detail/mobile/image-fylo-hero@2x.jpg)
+  background-image: url(images/detail/mobile/image-fylo-hero@2x.jpg)
 
 }
 
 .project__img--fylo-1 {
-  background-image: url(/minimalist/images/detail/mobile/image-fylo-preview-1@2x.jpg)
+  background-image: url(images/detail/mobile/image-fylo-preview-1@2x.jpg)
   
 }
 
 .project__img--fylo-2 {
-  background-image: url(/minimalist/images/detail/mobile/image-fylo-preview-2@2x.jpg);
+  background-image: url(images/detail/mobile/image-fylo-preview-2@2x.jpg);
 }
 
 .cta {
